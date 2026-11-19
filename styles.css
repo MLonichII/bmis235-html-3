@@ -15,6 +15,7 @@ body {
     color: #eae6de;
     margin: 0;
     padding: 0 20px 40px 20px;
+   
 }
 
 /* the menu at the top of every page */
@@ -36,6 +37,7 @@ nav img {
 /* no underline or border around the image links */
 nav a {
     text-decoration: none;
+   Border-radius:15px
 }
 
 h1 {
