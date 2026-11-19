@@ -42,7 +42,8 @@
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
 <div class="showcase">
-<!-- HTML: Interactive six-generation BMW M3 showcase -->
+
+<!-- HTML: Minimalist BMW M3 generation showcase -->
 <div class="showcase__inner">
 
   <div class="showcase__header">
@@ -53,58 +54,7 @@
   </div>
 
   <div class="showcase__stage">
-    <div class="showcase__car">
-      <svg class="showcase__svg" viewBox="0 0 700 300"
-           role="img" aria-label="BMW E30 M3 illustration">
-        <g class="car-art">
-          <path d="M55 222 L70 192 L108 173 L202 153 L263 86 Q278 65 310 62 L448 62 Q476 65 497 94 L551 157 L620 172 Q648 184 650 216 L640 233 L67 233Z"
-            fill="#30343a" stroke="#17191c" stroke-width="5"/>
-
-          <path d="M216 149 L274 88 L304 72 L345 72 L345 150Z"
-            fill="#aebbc0" stroke="#17191c" stroke-width="5"/>
-          <path d="M359 72 L447 72 Q465 73 483 98 L524 150 L359 150Z"
-            fill="#aebbc0" stroke="#17191c" stroke-width="5"/>
-
-          <path d="M352 69 L352 155" stroke="#17191c" stroke-width="7"/>
-
-          <path d="M55 193 L110 185 L110 215 L59 216Z"
-            fill="#25282b"/>
-          <rect x="78" y="179" width="25" height="20" fill="#17191c"/>
-          <rect x="106" y="179" width="35" height="19" rx="3" fill="#eae6de"/>
-          <path d="M82 202 L99 202 M82 208 L99 208"
-            stroke="#999" stroke-width="3"/>
-
-          <path d="M565 161 L597 139 L606 165" fill="#30343a"
-            stroke="#17191c" stroke-width="4"/>
-          <path d="M554 137 L612 137 L615 146 L550 146Z"
-            fill="#25282b" stroke="#17191c" stroke-width="3"/>
-
-          <path d="M350 155 L350 219 M350 181 L451 181"
-            stroke="#737a7e" stroke-width="2"/>
-          <rect x="422" y="164" width="24" height="5" rx="2" fill="#eae6de"/>
-          <rect x="611" y="179" width="27" height="22" rx="3" fill="#a94440"/>
-
-          <path d="M62 226 L118 232 L115 240 L60 235Z" fill="#17191c"/>
-
-          <g class="showcase__wheels">
-            <circle cx="190" cy="222" r="46" fill="#17191c"/>
-            <circle cx="190" cy="222" r="34" fill="#aeb0ae"/>
-            <circle cx="190" cy="222" r="27" fill="#34383d"/>
-            <circle cx="190" cy="222" r="7" fill="#eae6de"/>
-            <path d="M190 197 V247 M165 222 H215 M172 204 L208 240 M208 204 L172 240"
-              stroke="#d6d2c9" stroke-width="5"/>
-
-            <circle cx="529" cy="222" r="46" fill="#17191c"/>
-            <circle cx="529" cy="222" r="34" fill="#aeb0ae"/>
-            <circle cx="529" cy="222" r="27" fill="#34383d"/>
-            <circle cx="529" cy="222" r="7" fill="#eae6de"/>
-            <path d="M529 197 V247 M504 222 H554 M511 204 L547 240 M547 204 L511 240"
-              stroke="#d6d2c9" stroke-width="5"/>
-          </g>
-          <text x="465" y="173" fill="#eae6de" font-size="13" font-weight="bold">M3</text>
-        </g>
-      </svg>
-    </div>
+    <div class="showcase__car"></div>
   </div>
 
   <div class="showcase__details">
@@ -114,7 +64,8 @@
   </div>
 
   <div class="showcase__controls">
-    <button class="showcase__arrow showcase__prev" aria-label="Previous generation">←</button>
+    <button class="showcase__arrow showcase__prev"
+      aria-label="Previous generation">←</button>
 
     <div class="showcase__dots">
       <button class="showcase__dot active" data-index="0" aria-label="E30"></button>
@@ -125,7 +76,8 @@
       <button class="showcase__dot" data-index="5" aria-label="G80"></button>
     </div>
 
-    <button class="showcase__arrow showcase__next" aria-label="Next generation">→</button>
+    <button class="showcase__arrow showcase__next"
+      aria-label="Next generation">→</button>
   </div>
 
   <div class="showcase__footer">
@@ -133,10 +85,11 @@
     <span class="showcase__counter">01 / 06</span>
     <span>EST. 1986</span>
   </div>
+
 </div>
 
 
-<!-- CSS: Original branding, responsive sizing and rolling animation -->
+<!-- CSS: Minimalist styling, silhouette presentation and animation -->
 <style>
 .showcase {
   background: #eae6de;
@@ -162,6 +115,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.showcase .showcase__header {
+  flex-shrink: 0;
 }
 
 .showcase .showcase__eyebrow {
@@ -190,10 +147,11 @@
   margin-top: 5px;
 }
 
+/* Vehicle display */
 .showcase .showcase__stage {
   width: 100%;
-  max-width: 710px;
-  height: 205px;
+  max-width: 730px;
+  height: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,10 +161,12 @@
 
 .showcase .showcase__car {
   width: 100%;
-  max-width: 680px;
+  max-width: 700px;
   opacity: 0;
-  transform: translateX(-120%);
-  transition: opacity .8s ease, transform 1.1s cubic-bezier(.2,.75,.25,1);
+  transform: translateX(-115%);
+  transition:
+    opacity .8s ease,
+    transform 1.2s cubic-bezier(.18,.75,.25,1);
 }
 
 .showcase .showcase__car.showcase__entered {
@@ -221,6 +181,7 @@
   overflow: visible;
 }
 
+/* Generation text */
 .showcase .showcase__details {
   min-height: 79px;
   margin-top: -3px;
@@ -246,6 +207,7 @@
   margin-top: 5px;
 }
 
+/* Navigation */
 .showcase .showcase__controls {
   display: flex;
   align-items: center;
@@ -293,6 +255,7 @@
   background: #5d7894;
 }
 
+/* Footer */
 .showcase .showcase__footer {
   width: 100%;
   max-width: 650px;
@@ -306,6 +269,7 @@
   letter-spacing: 2px;
 }
 
+/* Mobile adjustments */
 @media (max-width: 500px) {
   .showcase {
     min-height: 390px;
@@ -342,12 +306,14 @@
 @media (prefers-reduced-motion: reduce) {
   .showcase .showcase__car {
     transition: none;
+    opacity: 1;
+    transform: none;
   }
 }
 </style>
 
 
-<!-- JavaScript: Six model-specific car illustrations and generation navigation -->
+<!-- JavaScript: Six individual BMW silhouettes and generation navigation -->
 <script>
 (function () {
 
@@ -355,246 +321,284 @@
     {
       code: "E30",
       years: "1986 — 1991",
-      body: "M3",
-      description: "Classic boxy E30 coupe"
+      body: `
+        M42 211
+        L53 185
+        Q59 174 91 168
+        L194 151
+        L250 91
+        Q264 72 294 70
+        L430 70
+        Q460 71 480 96
+        L536 151
+        L624 169
+        Q652 176 656 207
+        L656 222
+        L575 222
+        C571 222 571 169 525 169
+        C479 169 479 222 474 222
+        L241 222
+        C236 222 236 169 190 169
+        C144 169 144 222 139 222
+        L52 222 Z
+      `,
+      windows: `
+        M210 148 L257 98
+        Q270 79 296 79
+        L337 79 L337 148 Z
+
+        M350 79 L428 79
+        Q455 79 474 103
+        L516 148 L350 148 Z
+      `,
+      pillars: `
+        M344 78 L344 150 L350 150 L350 78Z
+      `
     },
+
     {
       code: "E36",
       years: "1992 — 1999",
-      body: "M3",
-      description: "Rounded E36 coupe"
+      body: `
+        M40 211
+        L53 189
+        Q67 174 105 166
+        L193 149
+        L245 105
+        Q274 74 313 72
+        L431 72
+        Q464 74 486 104
+        L546 155
+        L625 174
+        Q651 182 657 211
+        L655 223
+        L575 223
+        C570 223 570 169 525 169
+        C480 169 480 223 475 223
+        L241 223
+        C236 223 236 169 190 169
+        C144 169 144 223 139 223
+        L50 223 Z
+      `,
+      windows: `
+        M205 146 L254 108
+        Q280 81 314 81
+        L339 81 L339 146 Z
+
+        M352 81 L428 81
+        Q457 83 480 112
+        L515 146 L352 146 Z
+      `,
+      pillars: `
+        M345 81 L345 148 L351 148 L351 81Z
+      `
     },
+
     {
       code: "E46",
       years: "2000 — 2006",
-      body: "M3",
-      description: "E46 M3 coupe"
+      body: `
+        M39 211
+        L53 187
+        Q69 173 109 166
+        L198 149
+        L257 92
+        Q280 68 315 67
+        L430 67
+        Q467 68 490 100
+        L549 153
+        L625 172
+        Q653 181 657 210
+        L654 224
+        L575 224
+        C570 224 570 168 525 168
+        C480 168 480 224 475 224
+        L241 224
+        C236 224 236 168 190 168
+        C144 168 144 224 139 224
+        L49 224 Z
+      `,
+      windows: `
+        M209 145 L267 94
+        Q283 77 316 76
+        L339 76 L339 145 Z
+
+        M352 76 L429 76
+        Q461 78 484 105
+        L518 145 L352 145 Z
+      `,
+      pillars: `
+        M345 75 L345 148 L351 148 L351 75Z
+      `
     },
+
     {
       code: "E9X",
       years: "2007 — 2013",
-      body: "M3",
-      description: "E92 M3 coupe"
+      body: `
+        M34 212
+        L48 187
+        Q63 172 109 163
+        L197 148
+        L259 91
+        Q284 64 322 63
+        L432 63
+        Q467 65 491 96
+        L554 154
+        L627 173
+        Q655 183 660 212
+        L657 225
+        L575 225
+        C570 225 570 169 525 169
+        C480 169 480 225 475 225
+        L241 225
+        C236 225 236 169 190 169
+        C144 169 144 225 139 225
+        L44 225 Z
+      `,
+      windows: `
+        M208 145 L268 93
+        Q289 72 322 72
+        L339 72 L339 145 Z
+
+        M352 72 L429 72
+        Q463 74 484 102
+        L520 145 L352 145 Z
+      `,
+      pillars: `
+        M345 71 L345 148 L351 148 L351 71Z
+      `
     },
+
     {
       code: "F80",
       years: "2014 — 2018",
-      body: "M3",
-      description: "F80 M3 sedan"
+      body: `
+        M29 211
+        L44 187
+        Q63 172 110 164
+        L192 149
+        L238 102
+        Q263 76 302 74
+        L432 74
+        Q464 75 489 104
+        L542 153
+        L628 171
+        Q657 182 661 211
+        L659 226
+        L576 226
+        C571 226 571 169 525 169
+        C479 169 479 226 474 226
+        L241 226
+        C236 226 236 169 190 169
+        C144 169 144 226 139 226
+        L39 226 Z
+      `,
+      windows: `
+        M201 146 L248 105
+        Q273 84 306 83
+        L334 83 L334 146 Z
+
+        M346 83 L427 83
+        Q457 84 478 109
+        L516 146 L346 146 Z
+      `,
+      pillars: `
+        M339 82 L339 149 L344 149 L344 82Z
+        M424 83 L424 146 L429 146 L429 83Z
+      `
     },
+
     {
       code: "G80",
       years: "2020 — PRESENT",
-      body: "M3",
-      description: "G80 M3 sedan"
+      body: `
+        M25 211
+        L42 187
+        Q59 171 109 163
+        L188 148
+        L235 105
+        Q262 76 302 73
+        L430 73
+        Q465 74 492 103
+        L547 155
+        L630 172
+        Q659 183 664 211
+        L661 228
+        L577 228
+        C572 228 572 169 526 169
+        C480 169 480 228 475 228
+        L241 228
+        C236 228 236 169 190 169
+        C144 169 144 228 139 228
+        L35 228 Z
+      `,
+      windows: `
+        M197 145 L244 107
+        Q274 82 306 82
+        L332 82 L332 145 Z
+
+        M343 82 L424 82
+        Q458 83 483 111
+        L516 145 L343 145 Z
+      `,
+      pillars: `
+        M337 81 L337 148 L343 148 L343 81Z
+        M423 82 L423 146 L429 146 L429 82Z
+      `
     }
   ];
 
-  // Creates model-specific SVG car illustrations.
   function makeCar(index) {
 
-    const models = [
-      {
-        body: "M55 222 L70 192 L108 173 L202 153 L263 86 Q278 65 310 62 L448 62 Q476 65 497 94 L551 157 L620 172 Q648 184 650 216 L640 233 L67 233Z",
-        windows: [
-          "M216 149 L274 88 L304 72 L345 72 L345 150Z",
-          "M359 72 L447 72 Q465 73 483 98 L524 150 L359 150Z"
-        ],
-        hood: "M55 193 L110 185 L110 215 L59 216Z",
-        grille: "M78 179 H102 V199 H78Z M105 179 H141 V198 H105Z",
-        lights: "M106 179 H141 V198 H106Z",
-        rear: "M611 179 H638 V201 H611Z",
-        spoiler: "M554 137 H615 L612 146 H550Z",
-        accent: "M190 155 L245 143"
-      },
-      {
-        body: "M53 218 Q59 190 94 177 L188 153 L243 104 Q271 75 310 73 L437 73 Q469 74 492 104 L552 157 L620 175 Q649 186 650 216 L641 232 L65 232Z",
-        windows: [
-          "M208 149 L252 106 Q277 80 311 81 L344 81 L344 151Z",
-          "M359 81 L436 81 Q463 83 484 108 L522 151 L359 151Z"
-        ],
-        hood: "M54 194 Q80 181 111 181 L111 214 L59 218Z",
-        grille: "M78 180 H102 V199 H78Z M105 180 H136 V199 H105Z",
-        lights: "M105 177 Q123 173 143 184 L141 199 H105Z",
-        rear: "M611 179 H639 V201 H611Z",
-        spoiler: "M566 152 L600 143 L605 149 L568 160Z",
-        accent: "M190 155 Q218 144 243 139"
-      },
-      {
-        body: "M52 217 L70 190 Q91 174 133 167 L207 150 L258 94 Q279 68 313 66 L440 66 Q470 68 493 97 L552 157 L622 173 Q650 186 650 216 L641 233 L63 233Z",
-        windows: [
-          "M217 147 L267 97 Q283 76 315 75 L345 75 L345 150Z",
-          "M359 75 L437 75 Q464 78 483 101 L520 150 L359 150Z"
-        ],
-        hood: "M53 193 Q85 177 121 180 L116 213 L59 218Z",
-        grille: "M77 178 H103 V201 H77Z M106 178 H135 V201 H106Z",
-        lights: "M105 177 Q124 170 146 183 L142 201 H106Z",
-        rear: "M609 177 H637 V200 H609Z",
-        spoiler: "M559 149 L600 140 L607 147 L561 158Z",
-        accent: "M202 151 Q230 141 257 135"
-      },
-      {
-        body: "M47 219 L65 193 Q89 173 131 164 L206 151 L264 91 Q284 65 321 62 L441 62 Q475 64 497 98 L555 159 L620 175 Q651 188 653 216 L643 234 L61 234Z",
-        windows: [
-          "M214 147 L271 93 Q288 71 322 71 L345 71 L345 151Z",
-          "M359 71 L438 71 Q465 73 485 102 L523 151 L359 151Z"
-        ],
-        hood: "M49 192 Q78 179 113 177 L119 214 L58 220Z",
-        grille: "M76 179 H104 V202 H76Z M107 179 H137 V202 H107Z",
-        lights: "M105 178 Q126 169 148 181 L143 200 H105Z",
-        rear: "M610 178 H639 V202 H610Z",
-        spoiler: "M566 145 L600 134 L611 142 L566 155Z",
-        accent: "M202 152 Q236 138 263 133"
-      },
-      {
-        body: "M43 218 L60 191 Q87 174 133 166 L200 151 L250 99 Q275 72 306 69 L434 69 Q466 71 491 99 L552 155 L621 172 Q652 185 656 215 L645 235 L57 235Z",
-        windows: [
-          "M210 147 L256 103 Q278 78 309 78 L343 78 L343 151Z",
-          "M357 78 L433 78 Q460 80 481 104 L521 151 L357 151Z"
-        ],
-        hood: "M43 191 Q78 174 118 177 L116 214 L53 219Z",
-        grille: "M72 178 H101 V204 H72Z M104 178 H137 V204 H104Z",
-        lights: "M104 177 Q127 170 150 182 L144 201 H104Z",
-        rear: "M612 176 H642 V201 H612Z",
-        spoiler: "M566 150 L603 141 L608 149 L566 159Z",
-        accent: "M194 151 Q226 139 251 133"
-      },
-      {
-        body: "M38 220 L56 190 Q82 174 129 165 L198 151 L249 101 Q274 74 310 69 L439 69 Q471 71 494 100 L554 157 L623 174 Q656 186 660 218 L648 236 L51 236Z",
-        windows: [
-          "M207 147 L255 104 Q278 78 313 78 L344 78 L344 151Z",
-          "M358 78 L436 78 Q466 80 486 105 L522 151 L358 151Z"
-        ],
-        hood: "M38 191 Q76 174 116 177 L114 215 L49 220Z",
-        grille: "M72 174 H101 V210 H72Z M105 174 H137 V210 H105Z",
-        lights: "M103 175 Q128 168 151 181 L144 202 H103Z",
-        rear: "M613 176 H644 V202 H613Z",
-        spoiler: "M568 151 L608 141 L612 149 L568 160Z",
-        accent: "M194 151 Q227 138 251 133"
-      }
-    ];
-
-    const m = models[index];
-
-    const wheels = `
-      <g>
-        <circle cx="190" cy="222" r="46" fill="#17191c"/>
-        <circle cx="190" cy="222" r="35" fill="#aeb0ae"/>
-        <circle cx="190" cy="222" r="27" fill="#34383d"/>
-        <circle cx="190" cy="222" r="7" fill="#eae6de"/>
-        <path d="M190 196 V248 M164 222 H216 M172 204 L208 240 M208 204 L172 240"
-          stroke="#d6d2c9" stroke-width="5"/>
-
-        <circle cx="529" cy="222" r="46" fill="#17191c"/>
-        <circle cx="529" cy="222" r="35" fill="#aeb0ae"/>
-        <circle cx="529" cy="222" r="27" fill="#34383d"/>
-        <circle cx="529" cy="222" r="7" fill="#eae6de"/>
-        <path d="M529 196 V248 M503 222 H555 M511 204 L547 240 M547 204 L511 240"
-          stroke="#d6d2c9" stroke-width="5"/>
-      </g>`;
-
-    let extra = "";
-
-    if (index === 0) {
-      extra = `
-        <path d="M68 226 L120 233 L117 241 L65 235Z" fill="#17191c"/>
-        <path d="M565 157 L592 135 L606 140 L599 166Z" fill="#25282b"/>
-      `;
-    }
-
-    if (index === 1) {
-      extra = `
-        <path d="M68 224 Q90 213 114 218 L112 233 L63 233Z" fill="#202328"/>
-        <path d="M554 157 L593 149 L600 157 L560 166Z" fill="#25282b"/>
-      `;
-    }
-
-    if (index === 2) {
-      extra = `
-        <path d="M68 225 L119 230 L114 239 L62 235Z" fill="#17191c"/>
-        <path d="M570 157 L602 144 L610 153 L573 164Z" fill="#25282b"/>
-      `;
-    }
-
-    if (index === 3) {
-      extra = `
-        <path d="M65 225 L120 233 L114 241 L60 235Z" fill="#17191c"/>
-        <path d="M560 156 L608 143 L614 151 L566 165Z" fill="#25282b"/>
-        <path d="M292 68 L319 61 L345 62" stroke="#17191c" stroke-width="5" fill="none"/>
-      `;
-    }
-
-    if (index === 4) {
-      extra = `
-        <path d="M48 223 L114 231 L110 241 L45 234Z" fill="#17191c"/>
-        <path d="M553 155 L603 142 L613 152 L559 165Z" fill="#25282b"/>
-        <path d="M350 152 L350 213 M450 152 L450 214"
-          stroke="#888e91" stroke-width="2"/>
-      `;
-    }
-
-    if (index === 5) {
-      extra = `
-        <path d="M40 224 L113 231 L110 241 L38 235Z" fill="#17191c"/>
-        <path d="M552 157 L605 143 L616 153 L561 168Z" fill="#25282b"/>
-        <path d="M350 152 L350 214 M452 152 L452 214"
-          stroke="#888e91" stroke-width="2"/>
-        <path d="M77 176 L101 176 L101 211 L77 211Z"
-          fill="#17191c"/>
-        <path d="M105 176 L133 176 L133 211 L105 211Z"
-          fill="#17191c"/>
-        <path d="M84 181 V206 M91 181 V206 M112 181 V206 M119 181 V206"
-          stroke="#9ca1a2" stroke-width="2"/>
-      `;
-    }
+    const model = generations[index];
 
     return `
-      <svg viewBox="0 0 700 290" class="showcase__svg"
-        role="img" aria-label="BMW ${m.code} M3 side profile">
-        <ellipse cx="350" cy="262" rx="280" ry="10"
-          fill="#25282b" opacity=".14"/>
+      <svg class="showcase__svg"
+        viewBox="0 0 700 290"
+        role="img"
+        aria-label="BMW ${model.code} M3 side silhouette">
 
-        <path d="${m.body}" fill="#30343a"
-          stroke="#17191c" stroke-width="5"
-          stroke-linejoin="round"/>
+        <defs>
+          <mask id="car-cutouts-${index}">
+            <rect width="700" height="290" fill="white"/>
 
-        ${m.windows.map(p => `
-          <path d="${p}" fill="#aebbc0"
-            stroke="#17191c" stroke-width="5"/>
-        `).join("")}
+            <!-- Window openings -->
+            <path d="${model.windows}" fill="black"/>
+          </mask>
+        </defs>
 
-        <path d="M352 68 L352 155"
-          stroke="#17191c" stroke-width="6"/>
+        <!-- Subtle ground shadow -->
+        <ellipse cx="350" cy="249" rx="280" ry="7"
+          fill="#25282b" opacity=".10"/>
 
-        <path d="${m.accent}"
-          stroke="#eae6de" stroke-width="2" opacity=".3" fill="none"/>
+        <!-- Simplified tires -->
+        <g fill="#30343a">
+          <circle cx="190" cy="220" r="39"/>
+          <circle cx="525" cy="220" r="39"/>
+        </g>
 
-        <path d="${m.hood}" fill="#25282b"/>
-        ${m.grille.split(" M").map((p, i) => {
-          return i === 0
-            ? `<path d="${p}" fill="#17191c"/>`
-            : `<path d="M${p}" fill="#17191c"/>`;
-        }).join("")}
+        <!-- Wheel center negative spaces -->
+        <g fill="#eae6de">
+          <circle cx="190" cy="220" r="16"/>
+          <circle cx="525" cy="220" r="16"/>
+        </g>
 
-        <path d="${m.lights}" fill="#eae6de"
-          stroke="#17191c" stroke-width="3"/>
+        <!-- Main vehicle silhouette -->
+        <path d="${model.body}"
+          fill="#30343a"
+          mask="url(#car-cutouts-${index})"/>
 
-        <path d="${m.rear}" fill="#a94440"
-          stroke="#17191c" stroke-width="2"/>
+        <!-- Window pillars -->
+        <path d="${model.pillars}"
+          fill="#30343a"/>
 
-        <path d="${m.spoiler}" fill="#25282b"
-          stroke="#17191c" stroke-width="3"/>
+        <!-- Small understated M-inspired accent -->
+        <path d="M90 238 L610 238"
+          stroke="#5d7894"
+          stroke-width="1"
+          opacity=".45"/>
 
-        <path d="M350 155 L350 213"
-          stroke="#737a7e" stroke-width="2"/>
-        <rect x="420" y="164" width="24" height="5"
-          rx="2" fill="#eae6de"/>
-
-        ${extra}
-        ${wheels}
-
-        <text x="466" y="174" font-size="13"
-          font-weight="bold" fill="#eae6de">M3</text>
       </svg>
     `;
   }
@@ -602,10 +606,11 @@
   document.querySelectorAll(".showcase").forEach(function(showcase) {
 
     const car = showcase.querySelector(".showcase__car");
-    const details = showcase.querySelector(".showcase__generation");
+    const generation = showcase.querySelector(".showcase__generation");
     const name = showcase.querySelector(".showcase__name");
     const years = showcase.querySelector(".showcase__years");
     const counter = showcase.querySelector(".showcase__counter");
+
     const dots = showcase.querySelectorAll(".showcase__dot");
     const prev = showcase.querySelector(".showcase__prev");
     const next = showcase.querySelector(".showcase__next");
@@ -613,31 +618,42 @@
     let current = 0;
 
     function displayGeneration(index) {
+
       current = (index + generations.length) % generations.length;
 
+      const model = generations[current];
+
+      // Reset and restart the rolling animation
       car.classList.remove("showcase__entered");
 
       void car.offsetWidth;
 
+      // Replace the current silhouette
       car.innerHTML = makeCar(current);
 
-      details.textContent =
-        "GENERATION 0" + (current + 1) + " / " + generations[current].code;
+      // Update generation information
+      generation.textContent =
+        "GENERATION 0" + (current + 1) + " / " + model.code;
 
-      name.textContent = generations[current].body === "M3"
-        ? "BMW M3" : generations[current].body;
-
-      years.textContent = generations[current].years;
+      name.textContent = "BMW M3";
+      years.textContent = model.years;
 
       counter.textContent =
         "0" + (current + 1) + " / 06";
 
+      // Update navigation indicators
       dots.forEach(function(dot, i) {
+
         dot.classList.toggle("active", i === current);
-        dot.setAttribute("aria-current",
-          i === current ? "true" : "false");
+
+        dot.setAttribute(
+          "aria-current",
+          i === current ? "true" : "false"
+        );
+
       });
 
+      // Animate the new vehicle
       requestAnimationFrame(function() {
         car.classList.add("showcase__entered");
       });
@@ -663,8 +679,6 @@
 
 })();
 </script>
-
-
 
 </div>
 
