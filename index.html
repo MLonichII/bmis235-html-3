@@ -42,7 +42,7 @@
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
 <div class="showcase">
-<!-- HTML: Interactive BMW M3 generation showcase -->
+<!-- HTML: Six-generation BMW M3 interactive showcase -->
 <div class="showcase__inner">
 
   <div class="showcase__header">
@@ -53,118 +53,10 @@
   </div>
 
   <div class="showcase__stage">
-    <div class="showcase__car">
-      <svg class="showcase__car-svg" viewBox="0 0 700 300"
-           role="img" aria-label="BMW M3 generation illustration">
-        <defs>
-          <linearGradient id="m3paint" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#59636d"/>
-            <stop offset="100%" stop-color="#252b31"/>
-          </linearGradient>
-        </defs>
-
-        <!-- Shadow -->
-        <ellipse cx="350" cy="255" rx="275" ry="13"
-                 fill="#25282b" opacity=".16"/>
-
-        <!-- Car body -->
-        <path d="M70 204 L91 173 Q105 158 154 149
-          L218 137 L277 76 Q294 57 327 56
-          L449 56 Q479 58 503 84
-          L562 149 L620 163 Q642 174 646 197
-          L644 218 L605 230 L91 230 L64 219 Z"
-          fill="url(#m3paint)" stroke="#191d21"
-          stroke-width="5" stroke-linejoin="round"/>
-
-        <!-- Windows -->
-        <path d="M230 132 L285 78 Q297 66 323 66
-          L345 66 L345 136 Z"
-          fill="#b9c5c8" stroke="#191d21" stroke-width="5"/>
-
-        <path d="M358 66 L446 66 Q467 68 487 93
-          L524 137 L358 137 Z"
-          fill="#b9c5c8" stroke="#191d21" stroke-width="5"/>
-
-        <path d="M351 63 L351 140"
-          stroke="#191d21" stroke-width="7"/>
-
-        <!-- Reflections -->
-        <path d="M291 81 L315 73 L278 125 L253 128 Z"
-          fill="#eae6de" opacity=".2"/>
-        <path d="M378 72 L408 72 L380 128 L366 128 Z"
-          fill="#eae6de" opacity=".2"/>
-
-        <!-- Body lines -->
-        <path d="M355 143 L355 207 M357 177 L452 177"
-          fill="none" stroke="#92999c" stroke-width="2" opacity=".7"/>
-
-        <!-- Door handle -->
-        <rect x="420" y="155" width="24" height="5" rx="2"
-              fill="#eae6de"/>
-
-        <!-- Front bumper -->
-        <path d="M65 204 L95 203 L95 222 L69 220 Z"
-          fill="#92999c" stroke="#191d21" stroke-width="3"/>
-
-        <!-- Front grille -->
-        <rect x="77" y="178" width="19" height="20"
-              fill="#17191c"/>
-
-        <path d="M83 180 V196 M89 180 V196"
-          stroke="#777" stroke-width="2"/>
-
-        <!-- Headlight -->
-        <rect x="99" y="177" width="34" height="18" rx="4"
-          fill="#eae6de" stroke="#191d21" stroke-width="3"/>
-
-        <!-- Rear light -->
-        <rect x="604" y="174" width="27" height="20" rx="3"
-          fill="#a94440" stroke="#191d21" stroke-width="3"/>
-
-        <!-- Rear spoiler -->
-        <path d="M568 145 L590 112 L605 114 L598 154"
-          fill="#252b31" stroke="#191d21" stroke-width="4"/>
-        <path d="M555 110 L617 110 L620 118 L551 118 Z"
-          fill="#252b31" stroke="#191d21" stroke-width="3"/>
-
-        <!-- Front spoiler -->
-        <path d="M64 218 L120 222 L117 231 L65 226 Z"
-          fill="#202328" stroke="#191d21" stroke-width="3"/>
-
-        <!-- Wheels -->
-        <g fill="none" stroke="#d2d0c8">
-          <circle cx="192" cy="216" r="45" fill="#17191c"
-                  stroke="#17191c" stroke-width="3"/>
-          <circle cx="192" cy="216" r="34" fill="#9da2a1"
-                  stroke="#17191c" stroke-width="3"/>
-          <circle cx="192" cy="216" r="27" fill="#34383d"
-                  stroke="#17191c" stroke-width="2"/>
-          <circle cx="192" cy="216" r="7" fill="#d6d2c9"
-                  stroke="none"/>
-          <path d="M192 190 V242 M166 216 H218
-                   M174 198 L210 234 M210 198 L174 234"
-                stroke-width="5"/>
-        </g>
-
-        <g fill="none" stroke="#d2d0c8">
-          <circle cx="529" cy="216" r="45" fill="#17191c"
-                  stroke="#17191c" stroke-width="3"/>
-          <circle cx="529" cy="216" r="34" fill="#9da2a1"
-                  stroke="#17191c" stroke-width="3"/>
-          <circle cx="529" cy="216" r="27" fill="#34383d"
-                  stroke="#17191c" stroke-width="2"/>
-          <circle cx="529" cy="216" r="7" fill="#d6d2c9"
-                  stroke="none"/>
-          <path d="M529 190 V242 M503 216 H555
-                   M511 198 L547 234 M547 198 L511 234"
-                stroke-width="5"/>
-        </g>
-
-        <!-- M badge -->
-        <text x="466" y="164" font-size="13" font-weight="bold"
-          fill="#eae6de" font-family="Arial">M3</text>
-      </svg>
-    </div>
+    <img
+      class="showcase__car-image"
+      src="YOUR_E30_IMAGE_PATH"
+      alt="BMW E30 M3 side profile">
   </div>
 
   <div class="showcase__details">
@@ -175,7 +67,7 @@
 
   <div class="showcase__controls">
     <button class="showcase__arrow showcase__prev"
-            aria-label="Previous generation">←</button>
+      aria-label="Previous generation">←</button>
 
     <div class="showcase__dots">
       <button class="showcase__dot active" data-index="0" aria-label="E30"></button>
@@ -187,7 +79,7 @@
     </div>
 
     <button class="showcase__arrow showcase__next"
-            aria-label="Next generation">→</button>
+      aria-label="Next generation">→</button>
   </div>
 
   <div class="showcase__footer">
@@ -198,7 +90,8 @@
 
 </div>
 
-<!-- CSS: Responsive design, styling and car entrance animation -->
+
+<!-- CSS: Original branding, responsive layout and rolling animation -->
 <style>
 .showcase {
   background: #eae6de;
@@ -257,6 +150,7 @@
   margin-top: 5px;
 }
 
+/* Car image area */
 .showcase .showcase__stage {
   width: 100%;
   max-width: 710px;
@@ -268,20 +162,19 @@
   flex-shrink: 0;
 }
 
-.showcase .showcase__car {
+.showcase .showcase__car-image {
+  display: block;
   width: 100%;
   max-width: 660px;
+  height: 190px;
+  object-fit: contain;
+  object-position: center;
   opacity: 0;
   transform: translateX(-120%) scale(.9);
 }
 
-.showcase .showcase__car-svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.showcase .showcase__car.animate {
+/* Rolling entrance */
+.showcase .showcase__car-image.animate {
   animation: showcaseRoll 1.05s cubic-bezier(.2,.75,.25,1) forwards;
 }
 
@@ -290,16 +183,19 @@
     opacity: 0;
     transform: translateX(-120%) scale(.9);
   }
+
   75% {
     opacity: 1;
     transform: translateX(4%) scale(1.01);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) scale(1);
   }
 }
 
+/* Generation information */
 .showcase .showcase__details {
   margin-top: -3px;
   min-height: 79px;
@@ -325,6 +221,7 @@
   margin-top: 5px;
 }
 
+/* Navigation */
 .showcase .showcase__controls {
   display: flex;
   align-items: center;
@@ -372,6 +269,7 @@
   background: #5d7894;
 }
 
+/* Bottom information */
 .showcase .showcase__footer {
   width: 100%;
   max-width: 650px;
@@ -385,6 +283,7 @@
   letter-spacing: 2px;
 }
 
+/* Mobile layout */
 @media (max-width: 500px) {
   .showcase {
     min-height: 390px;
@@ -398,6 +297,10 @@
 
   .showcase .showcase__stage {
     height: 175px;
+  }
+
+  .showcase .showcase__car-image {
+    height: 165px;
   }
 
   .showcase .showcase__heading {
@@ -418,8 +321,9 @@
   }
 }
 
+/* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
-  .showcase .showcase__car.animate {
+  .showcase .showcase__car-image.animate {
     animation: none;
     opacity: 1;
     transform: none;
@@ -427,20 +331,59 @@
 }
 </style>
 
-<!-- JavaScript: Handles six generations, navigation, dots and animations -->
+
+<!-- JavaScript: Switches car photographs and handles navigation -->
 <script>
 (function () {
+
   const generations = [
-    { code: "E30", name: "BMW M3", years: "1986 — 1991" },
-    { code: "E36", name: "BMW M3", years: "1992 — 1999" },
-    { code: "E46", name: "BMW M3", years: "2000 — 2006" },
-    { code: "E9X", name: "BMW M3", years: "2007 — 2013" },
-    { code: "F80", name: "BMW M3", years: "2014 — 2018" },
-    { code: "G80", name: "BMW M3", years: "2020 — PRESENT" }
+    {
+      code: "E30",
+      name: "BMW M3",
+      years: "1986 — 1991",
+      image: "YOUR_E30_IMAGE_PATH",
+      alt: "BMW E30 M3"
+    },
+    {
+      code: "E36",
+      name: "BMW M3",
+      years: "1992 — 1999",
+      image: "YOUR_E36_IMAGE_PATH",
+      alt: "BMW E36 M3"
+    },
+    {
+      code: "E46",
+      name: "BMW M3",
+      years: "2000 — 2006",
+      image: "YOUR_E46_IMAGE_PATH",
+      alt: "BMW E46 M3"
+    },
+    {
+      code: "E9X",
+      name: "BMW M3",
+      years: "2007 — 2013",
+      image: "YOUR_E9X_IMAGE_PATH",
+      alt: "BMW E92 M3"
+    },
+    {
+      code: "F80",
+      name: "BMW M3",
+      years: "2014 — 2018",
+      image: "YOUR_F80_IMAGE_PATH",
+      alt: "BMW F80 M3"
+    },
+    {
+      code: "G80",
+      name: "BMW M3",
+      years: "2020 — PRESENT",
+      image: "YOUR_G80_IMAGE_PATH",
+      alt: "BMW G80 M3"
+    }
   ];
 
   document.querySelectorAll(".showcase").forEach(function (showcase) {
-    const car = showcase.querySelector(".showcase__car");
+
+    const car = showcase.querySelector(".showcase__car-image");
     const generation = showcase.querySelector(".showcase__generation");
     const name = showcase.querySelector(".showcase__name");
     const years = showcase.querySelector(".showcase__years");
@@ -452,13 +395,30 @@
     let current = 0;
 
     function displayGeneration(index) {
+
       current = (index + generations.length) % generations.length;
 
-      car.classList.remove("animate");
-      void car.offsetWidth;
-      car.classList.add("animate");
-
       const item = generations[current];
+
+      car.classList.remove("animate");
+
+      car.onload = function () {
+        car.classList.remove("animate");
+        void car.offsetWidth;
+        car.classList.add("animate");
+      };
+
+      car.onerror = function () {
+        car.alt = item.alt + " image could not be loaded. Check the image path.";
+      };
+
+      car.src = item.image;
+      car.alt = item.alt;
+
+      if (car.complete && car.naturalWidth > 0) {
+        void car.offsetWidth;
+        car.classList.add("animate");
+      }
 
       generation.textContent =
         "GENERATION 0" + (current + 1) + " / " + item.code;
@@ -466,13 +426,14 @@
       name.textContent = item.name;
       years.textContent = item.years;
 
-      counter.textContent =
-        "0" + (current + 1) + " / 06";
+      counter.textContent = "0" + (current + 1) + " / 06";
 
       dots.forEach(function (dot, i) {
         dot.classList.toggle("active", i === current);
-        dot.setAttribute("aria-current",
-          i === current ? "true" : "false");
+        dot.setAttribute(
+          "aria-current",
+          i === current ? "true" : "false"
+        );
       });
     }
 
@@ -490,10 +451,19 @@
       });
     });
 
+    // Preload remaining generation photographs
+    generations.forEach(function (item) {
+      const preload = new Image();
+      preload.src = item.image;
+    });
+
     displayGeneration(0);
+
   });
+
 })();
 </script>
+
 </div>
 
 <!-- Footer: fill in your name -->
