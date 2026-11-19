@@ -41,7 +41,460 @@
      This box is empty on purpose. In Part 7 you paste an interactive
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
-<div class="showcase"></div>
+<div class="showcase">
+<!-- HTML: Interactive BMW M3 generation showcase -->
+<div class="showcase__inner">
+
+  <div class="showcase__header">
+    <div class="showcase__eyebrow">THE ULTIMATE DRIVING MACHINE</div>
+    <div class="showcase__rule"></div>
+    <div class="showcase__heading">THE M3 LEGACY</div>
+    <div class="showcase__subheading">SIX GENERATIONS. ONE LEGEND.</div>
+  </div>
+
+  <div class="showcase__stage">
+    <div class="showcase__car">
+      <svg class="showcase__car-svg" viewBox="0 0 700 300"
+           role="img" aria-label="BMW M3 generation illustration">
+        <defs>
+          <linearGradient id="m3paint" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#59636d"/>
+            <stop offset="100%" stop-color="#252b31"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Shadow -->
+        <ellipse cx="350" cy="255" rx="275" ry="13"
+                 fill="#25282b" opacity=".16"/>
+
+        <!-- Car body -->
+        <path d="M70 204 L91 173 Q105 158 154 149
+          L218 137 L277 76 Q294 57 327 56
+          L449 56 Q479 58 503 84
+          L562 149 L620 163 Q642 174 646 197
+          L644 218 L605 230 L91 230 L64 219 Z"
+          fill="url(#m3paint)" stroke="#191d21"
+          stroke-width="5" stroke-linejoin="round"/>
+
+        <!-- Windows -->
+        <path d="M230 132 L285 78 Q297 66 323 66
+          L345 66 L345 136 Z"
+          fill="#b9c5c8" stroke="#191d21" stroke-width="5"/>
+
+        <path d="M358 66 L446 66 Q467 68 487 93
+          L524 137 L358 137 Z"
+          fill="#b9c5c8" stroke="#191d21" stroke-width="5"/>
+
+        <path d="M351 63 L351 140"
+          stroke="#191d21" stroke-width="7"/>
+
+        <!-- Reflections -->
+        <path d="M291 81 L315 73 L278 125 L253 128 Z"
+          fill="#eae6de" opacity=".2"/>
+        <path d="M378 72 L408 72 L380 128 L366 128 Z"
+          fill="#eae6de" opacity=".2"/>
+
+        <!-- Body lines -->
+        <path d="M355 143 L355 207 M357 177 L452 177"
+          fill="none" stroke="#92999c" stroke-width="2" opacity=".7"/>
+
+        <!-- Door handle -->
+        <rect x="420" y="155" width="24" height="5" rx="2"
+              fill="#eae6de"/>
+
+        <!-- Front bumper -->
+        <path d="M65 204 L95 203 L95 222 L69 220 Z"
+          fill="#92999c" stroke="#191d21" stroke-width="3"/>
+
+        <!-- Front grille -->
+        <rect x="77" y="178" width="19" height="20"
+              fill="#17191c"/>
+
+        <path d="M83 180 V196 M89 180 V196"
+          stroke="#777" stroke-width="2"/>
+
+        <!-- Headlight -->
+        <rect x="99" y="177" width="34" height="18" rx="4"
+          fill="#eae6de" stroke="#191d21" stroke-width="3"/>
+
+        <!-- Rear light -->
+        <rect x="604" y="174" width="27" height="20" rx="3"
+          fill="#a94440" stroke="#191d21" stroke-width="3"/>
+
+        <!-- Rear spoiler -->
+        <path d="M568 145 L590 112 L605 114 L598 154"
+          fill="#252b31" stroke="#191d21" stroke-width="4"/>
+        <path d="M555 110 L617 110 L620 118 L551 118 Z"
+          fill="#252b31" stroke="#191d21" stroke-width="3"/>
+
+        <!-- Front spoiler -->
+        <path d="M64 218 L120 222 L117 231 L65 226 Z"
+          fill="#202328" stroke="#191d21" stroke-width="3"/>
+
+        <!-- Wheels -->
+        <g fill="none" stroke="#d2d0c8">
+          <circle cx="192" cy="216" r="45" fill="#17191c"
+                  stroke="#17191c" stroke-width="3"/>
+          <circle cx="192" cy="216" r="34" fill="#9da2a1"
+                  stroke="#17191c" stroke-width="3"/>
+          <circle cx="192" cy="216" r="27" fill="#34383d"
+                  stroke="#17191c" stroke-width="2"/>
+          <circle cx="192" cy="216" r="7" fill="#d6d2c9"
+                  stroke="none"/>
+          <path d="M192 190 V242 M166 216 H218
+                   M174 198 L210 234 M210 198 L174 234"
+                stroke-width="5"/>
+        </g>
+
+        <g fill="none" stroke="#d2d0c8">
+          <circle cx="529" cy="216" r="45" fill="#17191c"
+                  stroke="#17191c" stroke-width="3"/>
+          <circle cx="529" cy="216" r="34" fill="#9da2a1"
+                  stroke="#17191c" stroke-width="3"/>
+          <circle cx="529" cy="216" r="27" fill="#34383d"
+                  stroke="#17191c" stroke-width="2"/>
+          <circle cx="529" cy="216" r="7" fill="#d6d2c9"
+                  stroke="none"/>
+          <path d="M529 190 V242 M503 216 H555
+                   M511 198 L547 234 M547 198 L511 234"
+                stroke-width="5"/>
+        </g>
+
+        <!-- M badge -->
+        <text x="466" y="164" font-size="13" font-weight="bold"
+          fill="#eae6de" font-family="Arial">M3</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="showcase__details">
+    <div class="showcase__generation">GENERATION 01 / E30</div>
+    <div class="showcase__name">BMW M3</div>
+    <div class="showcase__years">1986 — 1991</div>
+  </div>
+
+  <div class="showcase__controls">
+    <button class="showcase__arrow showcase__prev"
+            aria-label="Previous generation">←</button>
+
+    <div class="showcase__dots">
+      <button class="showcase__dot active" data-index="0" aria-label="E30"></button>
+      <button class="showcase__dot" data-index="1" aria-label="E36"></button>
+      <button class="showcase__dot" data-index="2" aria-label="E46"></button>
+      <button class="showcase__dot" data-index="3" aria-label="E9X"></button>
+      <button class="showcase__dot" data-index="4" aria-label="F80"></button>
+      <button class="showcase__dot" data-index="5" aria-label="G80"></button>
+    </div>
+
+    <button class="showcase__arrow showcase__next"
+            aria-label="Next generation">→</button>
+  </div>
+
+  <div class="showcase__footer">
+    <span>BMW M DIVISION</span>
+    <span class="showcase__counter">01 / 06</span>
+    <span>EST. 1986</span>
+  </div>
+
+</div>
+
+<!-- CSS: Responsive design, styling and car entrance animation -->
+<style>
+.showcase {
+  background: #eae6de;
+  color: #25282b;
+  font-family: "Copperplate Gothic", Copperplate, serif;
+  width: 100%;
+  min-height: 440px;
+  max-height: 490px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.showcase * {
+  box-sizing: border-box;
+}
+
+.showcase .showcase__inner {
+  max-width: 900px;
+  height: 100%;
+  min-height: 440px;
+  margin: auto;
+  padding: 19px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase .showcase__header {
+  flex-shrink: 0;
+}
+
+.showcase .showcase__eyebrow {
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #60676d;
+}
+
+.showcase .showcase__rule {
+  width: 40px;
+  height: 2px;
+  background: #5d7894;
+  margin: 9px auto;
+}
+
+.showcase .showcase__heading {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.showcase .showcase__subheading {
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #777b7e;
+  margin-top: 5px;
+}
+
+.showcase .showcase__stage {
+  width: 100%;
+  max-width: 710px;
+  height: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.showcase .showcase__car {
+  width: 100%;
+  max-width: 660px;
+  opacity: 0;
+  transform: translateX(-120%) scale(.9);
+}
+
+.showcase .showcase__car-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.showcase .showcase__car.animate {
+  animation: showcaseRoll 1.05s cubic-bezier(.2,.75,.25,1) forwards;
+}
+
+@keyframes showcaseRoll {
+  0% {
+    opacity: 0;
+    transform: translateX(-120%) scale(.9);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(4%) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.showcase .showcase__details {
+  margin-top: -3px;
+  min-height: 79px;
+}
+
+.showcase .showcase__generation {
+  color: #5d7894;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.showcase .showcase__name {
+  font-size: clamp(25px, 5vw, 35px);
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: 4px;
+}
+
+.showcase .showcase__years {
+  font-size: 12px;
+  color: #60676d;
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+.showcase .showcase__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 4px;
+}
+
+.showcase .showcase__arrow {
+  width: 29px;
+  height: 29px;
+  border: 1px solid #5d7894;
+  background: transparent;
+  color: #30343a;
+  font-size: 17px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.showcase .showcase__arrow:hover {
+  background: #5d7894;
+  color: white;
+}
+
+.showcase .showcase__dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.showcase .showcase__dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  border: 0;
+  background: #b4b3ad;
+  padding: 0;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.showcase .showcase__dot.active {
+  width: 23px;
+  border-radius: 8px;
+  background: #5d7894;
+}
+
+.showcase .showcase__footer {
+  width: 100%;
+  max-width: 650px;
+  border-top: 1px solid #c8c4bc;
+  padding-top: 10px;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #777b7e;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .showcase {
+    min-height: 390px;
+    max-height: 460px;
+  }
+
+  .showcase .showcase__inner {
+    min-height: 390px;
+    padding: 17px 10px 12px;
+  }
+
+  .showcase .showcase__stage {
+    height: 175px;
+  }
+
+  .showcase .showcase__heading {
+    font-size: 16px;
+  }
+
+  .showcase .showcase__controls {
+    gap: 16px;
+  }
+
+  .showcase .showcase__dots {
+    gap: 8px;
+  }
+
+  .showcase .showcase__footer {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .showcase .showcase__car.animate {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>
+
+<!-- JavaScript: Handles six generations, navigation, dots and animations -->
+<script>
+(function () {
+  const generations = [
+    { code: "E30", name: "BMW M3", years: "1986 — 1991" },
+    { code: "E36", name: "BMW M3", years: "1992 — 1999" },
+    { code: "E46", name: "BMW M3", years: "2000 — 2006" },
+    { code: "E9X", name: "BMW M3", years: "2007 — 2013" },
+    { code: "F80", name: "BMW M3", years: "2014 — 2018" },
+    { code: "G80", name: "BMW M3", years: "2020 — PRESENT" }
+  ];
+
+  document.querySelectorAll(".showcase").forEach(function (showcase) {
+    const car = showcase.querySelector(".showcase__car");
+    const generation = showcase.querySelector(".showcase__generation");
+    const name = showcase.querySelector(".showcase__name");
+    const years = showcase.querySelector(".showcase__years");
+    const counter = showcase.querySelector(".showcase__counter");
+    const dots = showcase.querySelectorAll(".showcase__dot");
+    const prev = showcase.querySelector(".showcase__prev");
+    const next = showcase.querySelector(".showcase__next");
+
+    let current = 0;
+
+    function displayGeneration(index) {
+      current = (index + generations.length) % generations.length;
+
+      car.classList.remove("animate");
+      void car.offsetWidth;
+      car.classList.add("animate");
+
+      const item = generations[current];
+
+      generation.textContent =
+        "GENERATION 0" + (current + 1) + " / " + item.code;
+
+      name.textContent = item.name;
+      years.textContent = item.years;
+
+      counter.textContent =
+        "0" + (current + 1) + " / 06";
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle("active", i === current);
+        dot.setAttribute("aria-current",
+          i === current ? "true" : "false");
+      });
+    }
+
+    prev.addEventListener("click", function () {
+      displayGeneration(current - 1);
+    });
+
+    next.addEventListener("click", function () {
+      displayGeneration(current + 1);
+    });
+
+    dots.forEach(function (dot) {
+      dot.addEventListener("click", function () {
+        displayGeneration(Number(dot.dataset.index));
+      });
+    });
+
+    displayGeneration(0);
+  });
+})();
+</script>
+</div>
 
 <!-- Footer: fill in your name -->
 <footer>Built by Michael Lonich II &middot; BMIS 235</footer>
